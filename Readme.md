@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Кашин](https://up.htmlacademy.ru/htmlcss/36/user/1455133).
-* Наставник: `Ольга Ветер`. (https://htmlacademy.ru/profile/id73199)
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
