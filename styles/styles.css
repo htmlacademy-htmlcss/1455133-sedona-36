@@ -18,7 +18,7 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
-    background-color: #ffffff;
+    background-color: #F2F2F2;
     color: #000000;
     width: 1200px;
     position: relative;
@@ -44,7 +44,6 @@ body {
     font-weight: 700;
     text-align: center;
     color: #000000;
-    background-color: #ffffff;
     text-decoration: none;
     text-transform: capitalize;
 }
@@ -80,6 +79,15 @@ body {
     background-repeat: no-repeat;
 }
 
+.count {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #ffffff;
+    background-color: #7DB54F;
+}
+
 .main-hero-block {
 
     background-image: url("../images/hero-block-background.jpg"), url("../images/divider.svg");
@@ -105,6 +113,13 @@ body {
     text-transform: uppercase;
 }
 
+.advantages-list {
+    list-style: none;
+}
+.advantages-sublist {
+    list-style: none;
+}
+
 .offer-text {
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
@@ -116,7 +131,6 @@ body {
 }
 
 .advantages-item {
-    width: 400px;
     min-height: 384px;
     background-color: #82B3D3;
 }
@@ -155,10 +169,13 @@ body {
     color: #333333;
 }
 
-.advatages-subitem {
-    /*обратить внимание */
-    background-color: #83B3D31F;
+.advantages-subitem {
+    background-color: rgba(131, 179, 211, 0.12);
+}
 
+.recomendation-list {
+        background-color: rgba(131, 179, 211, 0.12);
+        list-style: none;
 }
 
 .recomendation-title {
@@ -176,6 +193,7 @@ body {
     line-height: 21px;
     font-weight: 400;
     color: #333333;
+    text-align: center;
 }
 
 .housing {
@@ -233,6 +251,8 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding: 0;
+    border: none;
 }
 
 .subscribe-button {
@@ -244,8 +264,10 @@ body {
     text-transform: uppercase;
     background-color: #82B3D3;
     color: #ffffff;
-    min-height: 52px;
+    height: 52px;
     text-decoration: none;
+    border: none;
+    padding: 0;
 }
 
 .footer-contacts-address-phone {
@@ -263,6 +285,7 @@ body {
 .find-hotel {
     background-image: url("../images/filter-background.jpg");
     background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .filter-title {
@@ -306,6 +329,21 @@ body {
     color: #ffffff;
 }
 
+.cost {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.label-for-price {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    }
+
 .button-accept {
     width: 191px;
     height: 36px;
@@ -337,16 +375,34 @@ body {
 .search-result-quantity {
     width: 338px;
     height: 36px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
 }
 
-.sorting-container {
-    width: 522px;
-    height: 49px;
+.select-control {
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.view-grid {
+    background-image: url(../images/view-type-catalog-icon/view-grid.svg);
+    background-repeat: no-repeat;
+}
+.view-card {
+    background-image: url(../images/view-type-catalog-icon/view-card.svg);
+    background-repeat: no-repeat;
+}
+
+.view-list {
+    background-image: url(../images/view-type-catalog-icon/view-list.svg);
+    background-repeat: no-repeat;
 }
 
 .hotel-link {
@@ -357,6 +413,13 @@ body {
     line-height: 28px;
     color: #000000;
 
+}
+
+.hotel-card-title {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .hotel-card-button {
@@ -389,6 +452,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    display: block;
 }
 
 .started-price-hotel {
@@ -396,9 +460,15 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    display: block;
 }
 
-.hotel-star {}
+.stars {
+    background-image: url("../images/hotel-star-rating.svg");
+    background-repeat: no-repeat;
+    display: block;
+    background-color: tomato;
+}
 
 .hotel-rating {
     font-family: 'PT Sans', sans-serif;
