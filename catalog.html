@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header" data-test="header">
-      <a class="header-logo" href="index.html">
+      <a class="header-logo">
         <img class="header-logo" src="images/logo.svg" alt="Логотип" width="140" height="70">
       </a>
       <nav class="header-navigation">
@@ -20,25 +21,29 @@
             <a class="header-navigation-link" href="#">О Седоне</a>
           </li>
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">Гостиницы</a>
+            <a class="header-navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
       <ul class="header-navigation-user-list">
         <li class="header-navigation-user-item">
-          <button class="header-navigation-user-button"><span class="visually-hidden">Поиск</span></button>
+          <a class="header-navigation-link user-link">
+            <div class="find"><span class="visually-hidden">Поиск</span>
+            </div>
+          </a>
         </li>
         <li class="header-navigation-user-item">
-          <a class="header-navigation-user-link"><span class="visually-hidden">Избранное</span></a>
-        </li>
-        <li class="header-navigation-user-item">
-          <button class="header-navigation-user-button"><span class="modal-window">Хочу сюда!</span></button>
+          <a class="header-navigation-link user-link">
+            <div class="favorites"><span class="visually-hidden">Избранное</span>
+            </div>
+          </a>
         </li>
       </ul>
+      <button class="header-navigation-user-button" type="button"><span class="modal-window">Хочу сюда!</span></button>
     </header>
     <main class="main-inner" data-test="main">
       <section class="find-hotel" data-test="filter">
-        <h1>Гостиницы Седоны</h1>
+        <h1 class="filter-title">Гостиницы Седоны</h1>
         <nav class="breadcrumbs">
           <ol class="breadcrumbs-list">
             <li class="breadcrumbs-item">
@@ -47,7 +52,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link"><span class="breadcrumbs-link-title">Гостиницы</span></a>
             </li>
           </ol>
         </nav>
@@ -115,21 +120,23 @@
         </form>
       </section>
       <section class="find-result" data-test="catalog">
-        <h2>Найдено гостиниц: 38</h2>
+        <h2 class="search-result-quantiy">Найдено гостиниц: 38</h2>
+        <div class="sorting-container"></div>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогое</option>
           <option value="popular">Сначала популярное</option>
         </select>
         <a href="#" class="button-view">
-          <span class="visuaaly-hidden">Показать сеткой</span>
+          <span class="visually-hidden">Показать сеткой</span>
         </a>
         <a href="#" class="button-view">
-          <span class="visuaaly-hidden">Показать карточки по одной</span>
+          <span class="visually-hidden">Показать карточки по одной</span>
         </a>
         <a href="#" class="button-view">
-          <span class="visuaaly-hidden">Показать списком</span>
+          <span class="visually-hidden">Показать списком</span>
         </a>
+        </div>
         <ul class="hotel-list">
           <li class="product-card">
             <a class="hotel-link" href="hotel.html">
@@ -138,21 +145,22 @@
               <h3 class="hotel-card-tittle">Amara Resort & Spa</h3>
             </a>
             <span class="type-hotel">Гостиница</span>
-            <span class="stared-price-hotel">От 4000 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <a class="hotel-card-button button" href="#">В избранное</a>
+            <span class="started-price-hotel">От 4000 ₽</span>
+            <a class="hotel-card-button button-more" href="#">Подробнее</a>
+            <a class="hotel-card-button button-favorites" href="#">В избранное</a>
             <span class="hotel-star"></span>
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </li>
           <li>
             <a class="hotel-link" href="hotel.html">
-              <img class="hotel-card-image" src="images/catalog-cards/hotel-villas.jpg" alt="Фото гостиницы Villas at Poco Diablo">
+              <img class="hotel-card-image" src="images/catalog-cards/hotel-villas.jpg"
+                alt="Фото гостиницы Villas at Poco Diablo">
               <h3 class="hotel-card-tittle">Villas at Poco Diablo</h3>
             </a>
             <span class="type-hotel">Гостиница</span>
-            <span class="stared-price-hotel">От 5000 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <a class="hotel-card-button button pushed" href="#">В избранном</a>
+            <span class="started-price-hotel">От 5000 ₽</span>
+            <a class="hotel-card-button button-more" href="#">Подробнее</a>
+            <a class="hotel-card-button button-favorites pushed" href="#">В избранном</a>
             <span class="hotel-star"></span>
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
@@ -163,9 +171,9 @@
               <h3 class="hotel-card-tittle">Desert Quail Inn</h3>
             </a>
             <span class="type-hotel">Гостиница</span>
-            <span class="stared-price-hotel">От 2500 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <a class="hotel-card-button button" href="#">В избранное</a>
+            <span class="started-price-hotel">От 2500 ₽</span>
+            <a class="hotel-card-button button-more" href="#">Подробнее</a>
+            <a class="hotel-card-button button-favorites" href="#">В избранное</a>
             <span class="hotel-star"></span>
             <span class="hotel-rating">Рейтинг: 6,9</span>
           </li>
@@ -176,16 +184,16 @@
               <h3 class="hotel-card-tittle">GreenTree Inn</h3>
             </a>
             <span class="type-hotel">Гостиница</span>
-            <span class="stared-price-hotel">От 1500 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <a class="hotel-card-button button" href="#">В избранное</a>
+            <span class="started-price-hotel">От 1500 ₽</span>
+            <a class="hotel-card-button button-more" href="#">Подробнее</a>
+            <a class="hotel-card-button button-favorites" href="#">В избранное</a>
             <span class="hotel-star"></span>
             <span class="hotel-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
         <ol class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link current-link">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -197,7 +205,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link disabled">...</a>
+            <a class="pagination-link disabled-link">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -239,7 +247,7 @@
       </section>
       <section class="phone-number">
         <h2 class="visually-hidden">Номер телефона</h2>
-        <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 (812) 812-12-12</a>
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <section class="html-academy-footer-logo">
         <h2 class="visually-hidden">Логотип HTML-академии</h2>
