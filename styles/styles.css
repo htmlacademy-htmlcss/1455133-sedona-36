@@ -172,6 +172,10 @@ body {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
+.advantages-subitem-another {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
 .recomendation-list {
         background-color: rgba(131, 179, 211, 0.12);
         list-style: none;
@@ -285,6 +289,7 @@ body {
     background-image: url("../images/filter-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .filter-title {
