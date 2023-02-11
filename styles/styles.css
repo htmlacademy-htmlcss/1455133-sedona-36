@@ -19,7 +19,6 @@ html {
 }
 
 body {
-  display: flex;
   background-color: #F2F2F2;
   margin: 0 auto;
   height: 100%;
@@ -240,13 +239,18 @@ body {
   color: #333333;
 }
 
-
 .recomendation-list {
   display: flex;
-  background-color: rgba(131, 179, 211, 0.12);
   list-style: none;
+  width: 1200px;
   min-height: 385px;
-  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.recomendation-item {
+  background-color: rgba(131, 179, 211, 0.12);
+
 }
 
 .recomendation-title {
@@ -267,26 +271,25 @@ body {
   text-align: center;
 }
 
-.recomendation-icon {
-  display: block;
-  margin: 0 auto;
-}
-
-/*.housing {
+.housing {
   background-image: url("../images/recomendation-icon/recomendation-housing-icon.svg");
   background-repeat: no-repeat;
+  background-position: top;
 }
 
 .food {
   background-image: url("../images/recomendation-icon/recomendation-food-icon.svg");
   background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: top;
 }
 
 .souvenirs {
   background-image: url("../images/recomendation-icon/recomendation-souvenirs-icon.svg");
   background-repeat: no-repeat;
+  background-position: top;
 }
-*/
+
 
 .find-hotel {
   display: flex;
