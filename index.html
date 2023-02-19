@@ -28,16 +28,14 @@
           </ul>
           <ul class="header-navigation-list navigation-user">
             <li class="header-navigation-user-item">
-              <a class="header-navigation-link" href="#">
-                <div class="find"><span class="visually-hidden">Поиск</span>
-                </div>
+              <a class="header-navigation-link find-link" href="#">
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="header-navigation-user-item">
-              <a class="header-navigation-link" href="#">
-                <div class="favorites"><span class="visually-hidden">Избранное</span>
-                  <span class="count">12</span>
-                </div>
+              <a class="header-navigation-link favorites-link" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <!-- <span class="count">12</span> -->
               </a>
             </li>
             <li class="header-navigation-user-item">
@@ -54,9 +52,11 @@
         </section>
         <section class="main-advantages" data-test="advantages">
           <h2 class="visually-hidden">Приемущества и причины, по которым вам стоит посетить Седону</h2>
-          <p class="offer-title">Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</p>
-          <p class="offer-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="offer-wrapper-first">
+            <p class="offer-title">Седона — небольшой городок в Аризоне,
+              заслуживающий большего!</p>
+            <p class="offer-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <ul class="advantages-list">
             <li class="advantages-item">
               <div class="advantages-container">
@@ -96,42 +96,48 @@
         </section>
         <section class="recomendation" data-test="advantages">
           <h2 class="visually-hidden">Рекомендации</h2>
-          <p class="offer-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="offer-text">Опытный персонал и качественное обслуживание!</p>
-          <div class="recomendation-wrapper">
-            <ul class="recomendation-list">
-              <li class="recomendation-item housing">
-                <div class="recomendation-container">
-                  <h3 class="recomendation-title">Жильё</h3>
-                  <p class="recomendation-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                </div>
-              </li>
-              <li class="recomendation-item food">
-                <div class="recomendation-container">
-                  <h3 class="recomendation-title ">Еда</h3>
-                  <p class="recomendation-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-                </div>
-              </li>
-              <li class="recomendation-item souvenirs">
-                <div class="recomendation-container">
-                  <h3 class="recomendation-title">Сувениры</h3>
-                  <p class="recomendation-text">Не только китайского, но и настоящего местного производства!</p>
-                </div>
-              </li>
-            </ul>
+          <div class="offer-wrapper-second">
+            <p class="offer-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="offer-text">Опытный персонал и качественное обслуживание!</p>
           </div>
+          <ul class="recomendation-list">
+            <li class="recomendation-item">
+              <div class="recomendation-wrapper housing">
+                <h3 class="recomendation-title">Жильё</h3>
+                <p class="recomendation-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </div>
+            </li>
+            <li class="recomendation-item">
+              <div class="recomendation-wrapper food">
+                <h3 class="recomendation-title ">Еда</h3>
+                <p class="recomendation-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+            </li>
+            <li class="recomendation-item">
+              <div class="recomendation-wrapper souvenirs">
+                <h3 class="recomendation-title">Сувениры</h3>
+                <p class="recomendation-text">Не только китайского, но и настоящего местного производства!</p>
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="find-hotel" data-test="search">
-          <h2 class="offer-title find-hotel-title">Заинтересовались?</h2>
-          <p class="offer-text find-hotel-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-            гостиниц в
-            Седоне
-          </p>
-          <button class="modal-window-button" type="button">Поиск гостиницы в Седоне</button>
+          <div class="find-hotel-wrapper">
+            <h2 class="offer-title find-hotel-title">Заинтересовались?</h2>
+            <p class="offer-text find-hotel-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+              предложения
+              гостиниц в
+              Седоне
+            </p>
+            <button class="modal-window-button" type="button">Поиск гостиницы в Седоне</button>
+          </div>
         </section>
         <section class="subscribe-form" data-test="subscribe">
-          <h2 class="offer-title offer-title-white">Подпишитесь на рассылку</h2>
-          <p class="offer-text offer-text-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <div class="subscribe-form-text-wrapper">
+            <h2 class="offer-title offer-title-white">Подпишитесь на рассылку</h2>
+            <p class="offer-text offer-text-white">Только полезная информация и никакого спама, честное бойскаутское!
+            </p>
+          </div>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <input type="text" name="e-mail" placeholder="Ваш e-mail" class="input-subscribe">
             <button class="subscribe-button" type="submit">Подписаться</button>
