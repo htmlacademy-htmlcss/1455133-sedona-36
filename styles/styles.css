@@ -132,7 +132,11 @@ body {
   line-height: 20px;
 }
 
-.main-page-link::after {
+.current-page-link {
+  position: relative;
+}
+
+.current-page-link::after {
   position: absolute;
   right: 16px;
   left: 16px;
@@ -513,7 +517,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   padding: 0;
-  border: none;
+  border: solid 3px transparent;
   padding-left: 20px;
 }
 
@@ -684,10 +688,10 @@ body {
   flex-wrap: wrap;
 }
 
-.select-container {
+/*.select-container {
   display: flex;
   align-items: flex-start;
-}
+}*/
 
 .select-container-infrastructure {
   padding-right: 70px;
@@ -695,7 +699,7 @@ body {
 
 .select-container-type {
   padding-right: 140px;
-  /*min-width: 150px;*/
+  min-width: 150px;
 }
 
 .select-container-cost {
@@ -725,8 +729,8 @@ body {
   line-height: 78px;
   color: #ffffff;
   margin: 0;
-  /*margin-bottom: 8px;*/
-  padding-bottom: 8px;
+  padding: 0;
+  margin-bottom: 3px;
 
 }
 
@@ -756,7 +760,7 @@ body {
 
 .breadcrumbs {
   color: #ffffff;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-list {
@@ -843,6 +847,7 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   color: #ffffff;
+  padding: 0;
   padding-bottom: 32px;
 }
 
@@ -850,6 +855,7 @@ body {
   padding: 0;
   margin: 0;
   border: none;
+  /*margin-bottom: 32px;*/
   /*position: relative;*/
 }
 
@@ -867,9 +873,72 @@ body {
   margin: 0;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: solid 3px transparent;
+}
+
+.control-input:focus + .control-mark {
+  outline: solid 3px #83B3D3;
+}
+
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  content: url("../images/checkbox-checked-arrow.svg");
+  bottom: -5px;
+  left: 1px;
+
+  /*background-image: url("../images/checkbox-checked-arrow.svg");
+  width: 12px;
+  height: 10px;
+  top: 5px;
+  left: 5px;*/
+
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-label {
+  line-height: 23px;
+}
+
+
+
+
 .price-input {
   display: flex;
   position: relative;
+  min-height: 48px;
+  margin-bottom: 46px;
 }
 
 /*.label-for-price {
@@ -891,6 +960,17 @@ body {
   line-height: 24px;
 }
 
+.cost:hover,
+.cost:focus {
+  background: #E6E6E6;
+}
+
+.cost:focus {
+  outline: solid 3px #83B3D3;
+}
+
+
+
 .price-input::before {
   content: "от";
   width: 17px;
@@ -901,8 +981,8 @@ body {
   position: absolute;
   z-index: 1;
   opacity: 0.3;
-  top: 12px;
-  left: 106px;
+  top: 13px;
+  left: 107px;
 }
 
 .price-input::after {
@@ -929,6 +1009,47 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: solid 4px #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.range-toggle:focus {
+  border: solid 3px #83B3D3;
+  outline: none;
+}
+
+.range-toggle:active {
+  border: solid 2px #83B3D3;
+  outline: none;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
 
 /*.help-for-price-input {
   font-family: 'PT Sans', sans-serif;
@@ -1079,8 +1200,17 @@ body {
   background-position-x: calc(100% - 21px);
 }
 
-.button-view:hover:not(.button-view-current),
-.button-view:focus:not(.button-view-current),
+.button-view:hover:not(.button-view-current)
+{
+  border-color: #000000;
+}
+
+.button-view:focus:not(.button-view-current) {
+  outline: none;
+  border-color: #68A2CA;
+}
+
+
 .select-control:hover,
 .select-control:focus {
   border-color: #68A2CA;
