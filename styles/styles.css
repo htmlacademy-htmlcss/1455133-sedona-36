@@ -216,8 +216,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 69px;
-  padding-bottom: 69px;
-  margin-bottom: 21px;
+  margin-bottom: 37px;
 }
 
 .offer-wrapper-second {
@@ -225,7 +224,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 64px;
-  padding-bottom: 64px;
+  margin-bottom: 8px;
 }
 
 .offer-title {
@@ -276,7 +275,7 @@ body {
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: 188px;
+  top: 186px;
   left: 170px;
 }
 
@@ -286,7 +285,7 @@ body {
 
 .subitem-text::before {
   background-color: rgba(0, 0, 0, 0.3);
-  top: 198.5px;
+  top: 196px;
 }
 
 
@@ -320,7 +319,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 62px;
+  padding-bottom: 60px;
 
 }
 
@@ -503,22 +502,21 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 104px;
+  margin-bottom: 105px;
 }
 
 .input-subscribe {
   box-sizing: border-box;
   width: 452px;
   background: #F2F2F2;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 0;
   border: solid 3px transparent;
-  padding-left: 20px;
+  padding: 12px 20px 12px 20px;
 }
 
 .input-subscribe::placeholder {
@@ -688,12 +686,23 @@ body {
   flex-wrap: wrap;
 }
 
+.infrastructure-group {
+  margin: 0;
+  padding: 0;
+  margin-right: 70px;
+
+}
+
+.type-group {
+  margin-right: 147px;
+}
+
 /*.select-container {
   display: flex;
   align-items: flex-start;
 }*/
 
-.select-container-infrastructure {
+/*.select-container-infrastructure {
   padding-right: 70px;
 }
 
@@ -704,20 +713,17 @@ body {
 
 .select-container-cost {
   padding-right: 70px;
-}
+}*/
 
-
-
-.select-container-button {
-  flex-direction: column;
-  align-self: flex-end;
+.cost-group {
+  margin-right: 70px;
 }
 
 .find-hotel-block {
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
-  /*background-size: cover;*/
-  padding: 35px 70px 70px 70px;
+  background-size: cover;
+  padding: 35px 70px 72px 70px;
   margin-bottom: 50px;
 
 }
@@ -853,7 +859,6 @@ body {
 
 .catalog-filter-group {
   padding: 0;
-  margin: 0;
   border: none;
   /*margin-bottom: 32px;*/
   /*position: relative;*/
@@ -934,12 +939,12 @@ body {
 
 
 
-.price-input {
+/*.price-input {
   display: flex;
   position: relative;
   min-height: 48px;
   margin-bottom: 46px;
-}
+}*/
 
 /*.label-for-price {
   display: block;
@@ -949,11 +954,32 @@ body {
 
 }*/
 
+.cost-scale-wrapper {
+  display: flex;
+  position: relative;
+  padding-bottom: 43px;
+}
+
+.label-for-cost-input {
+  position: relative;
+}
+
+.label-for-cost-input span {
+  position: absolute;
+  content: "";
+  right: 20px;
+  top: 10px;
+  opacity: 0.3;
+  font-size: 18px;
+
+}
+
 .cost {
   font-family: "PT Sans Bold", sans-serif;
   font-weight: 700;
-  width: 103px;
+  width: 80px;
   padding: 12px 20px;
+  padding-right: 43px;
   background: #F2F2F2;
   border: none;
   font-size: 18px;
@@ -971,7 +997,10 @@ body {
 
 
 
-.price-input::before {
+
+
+
+/*.price-input::before {
   content: "от";
   width: 17px;
   height: 24px;
@@ -997,12 +1026,11 @@ body {
   opacity: 0.3;
   top: 12px;
   right: 20px;
-}
+}*/
 
 .min-price {
   border-radius: 4px 0 0 4px;
   margin-right: 2px;
-  position: relative;
 }
 
 .max-price {
@@ -1067,6 +1095,13 @@ body {
   width: 100%;
 }*/
 
+.select-container-button {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 56px;
+}
+
 .button-accept {
   display: block;
   width: 191px;
@@ -1081,8 +1116,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   padding: 8px 50px;
-  margin-bottom: 40px;
-  margin-top: 56px;
+  margin-bottom: 32px;
 }
 
 /*.button-accept:hover,
@@ -1100,6 +1134,8 @@ body {
   display: block;
   width: 191px;
   height: 36px;
+  padding: 0;
+  margin: 0;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1188,7 +1224,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   width: 292px;
-  height: 50px;
+  min-height: 50px;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -1197,7 +1233,8 @@ body {
   margin-right: 70px;
   appearance: none;
   background: url(../images/custom-select-arrow.svg) no-repeat right;
-  background-position-x: calc(100% - 21px);
+  background-position-x: calc(100% - 18px);
+  background-position-y: calc(100% - 16px);
 }
 
 .button-view:hover:not(.button-view-current)
@@ -1243,7 +1280,8 @@ body {
 .hotel-list {
   display: flex;
   list-style-type: none;
-  gap: 20px;
+  row-gap: 18px;
+  column-gap: 20px;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
@@ -1266,7 +1304,7 @@ body {
     "stars rating";
   box-sizing: border-box;
   width: 340px;
-  padding: 20px;
+  padding: 20px 20px 18px 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 
@@ -1414,6 +1452,8 @@ body {
 .pagination-container {
   display: flex;
   padding: 0 70px 60px 0;
+  margin: 0;
+  margin-bottom: 96px;
 }
 
 .pagination {
@@ -1474,4 +1514,5 @@ body {
 .subscribe-form-inner-page {
   background-image: none;
   background-color: #ffffff;
+
 }
