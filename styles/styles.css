@@ -681,6 +681,300 @@ body {
   opacity: 0.3;
 }
 
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+}
+
+.modal-find-hotel {
+  width: 577px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 62px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-icon {
+  fill: #000000;
+  fill-opacity: 1;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  outline: solid 3px #83B3D3;
+}
+
+.modal-close-button:active .modal-close-icon {
+  fill-opacity: 0.3;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal-label {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+.field-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+}
+.field {
+  position: relative;
+}
+
+.error-text {
+  position: absolute;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+  left: 228px;
+  top: 200px;
+}
+
+.promt-text {
+  position: absolute;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  bottom: 194px;
+  left: 228px;
+
+}
+
+.arrival-date::after,
+.departure-date::after {
+  position: absolute;
+  content: url("../images/date-input-icon.svg");
+  right: 92px;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+/*.people-options-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}*/
+
+.find-hotel-form .field {
+  width: 440px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 12px 20px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+}
+
+.find-hotel-form .adult-input-field,
+.find-hotel-form .childern-input-field
+ {
+  width: 110px;
+  text-align: center;
+}
+
+/*.find-hotel-form .adult-input-field {
+  margin-left: -40px;
+}*/
+
+.modal-input-wrapper {
+  position: relative;
+}
+
+.adult-wrapper {
+  margin-left: -40px;
+}
+
+.control-input-button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  border: solid 3px transparent;
+  fill: #756157;
+  fill-opacity: 0.3;
+}
+
+.minus-button:hover .minus-icon,
+.plus-button:hover .plus-icon,
+.control-input-button:focus {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.control-input-button:focus {
+  outline-color: #82B3D3;
+}
+
+.minus-button:active .minus-icon,
+.plus-button:active .plus-icon {
+  fill-opacity: 0.3;
+}
+
+.minus-icon {
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+
+.plus-icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.minus-button {
+  left: 8px;
+  top: 13px;
+  z-index: 1;
+}
+
+.plus-button {
+  right: 13px;
+  top: 13px;
+}
+
+/*.minus-button::before {
+  position: absolute;
+  content: url("../images/minus-icon.svg");
+  width: 20px;
+  height: 20px;
+  top: -2px;
+  right: -2px;
+  border: 3px;
+}
+
+.plus-button::before {
+  position: absolute;
+  content: url("../images/plus-icon.svg");
+  width: 20px;
+  height: 48px;
+  top: 1px;
+  right: -2px;
+}*/
+
+.tooltip {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-left: 10px;
+
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: #83B3D3;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #83B3D3;
+  display: block;
+}
+
+.tooltip-text {
+  box-sizing: border-box;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 15px 18px 15px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  margin-top: 6px;
+}
+
+
+
+
+/*.label-promt {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../images/label-promt-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-color: #83B3D3;
+
+}*/
+
 .catalog-filter-container {
   display: flex;
   flex-wrap: wrap;
