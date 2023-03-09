@@ -772,6 +772,7 @@ body {
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
+  padding-right: 40px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
