@@ -531,7 +531,7 @@ body {
   width: 452px;
   background: #f2f2f2;
   border-radius: 4px 0 0 4px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -572,7 +572,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
   width: 232px;
   text-decoration: none;
@@ -691,6 +691,7 @@ body {
 
 .html-academy-icon {
   fill: #000000;
+  display: block;
 }
 
 .html-academy-link:hover .html-academy-icon,
@@ -814,7 +815,7 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
-  font-family: "PT Sans", serif;
+  font-family: "PT Sans", sans-serif;
   outline: none;
 }
 
@@ -927,7 +928,7 @@ input[type="number"]:focus {
   border: solid 3px transparent;
   fill: #756157;
   fill-opacity: 0.3;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .minus-button:hover .minus-icon,
@@ -989,7 +990,7 @@ input[type="number"]:focus {
   border-radius: 50%;
   width: 26px;
   height: 26px;
-  background-image: url(../images/tooltip-icon.svg);
+  background-image: url("../images/tooltip-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1090,6 +1091,7 @@ input[type="number"]:focus {
   background-size: cover;
   padding: 35px 70px 72px 70px;
   margin-bottom: 50px;
+  background-color: #000000;
 }
 
 .filter-title {
@@ -1181,7 +1183,7 @@ input[type="number"]:focus {
   color: inherit;
   width: 73px;
   height: 21px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1305,7 +1307,7 @@ input[type="number"]:focus {
 }
 
 .cost {
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   width: 80px;
   padding: 12px 20px;
@@ -1343,7 +1345,7 @@ input[type="number"]:focus {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .range-toggle {
@@ -1357,8 +1359,8 @@ input[type="number"]:focus {
 }
 
 .range-toggle:hover {
-  background-color: #f2f2f2;
-  border-color: #f2f2f2;
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
 }
 
 .range-toggle:focus {
