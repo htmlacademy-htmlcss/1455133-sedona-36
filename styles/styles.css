@@ -212,7 +212,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center;
   background-size: contain, cover;
-  background-color: #82b3d3;
+  background-color: #68a2ca;
   padding: 51px 0 82px 0;
 }
 
@@ -287,6 +287,7 @@ body {
 
 .advantages-item {
   display: flex;
+  flex-wrap: wrap;
   background-color: #82b3d3;
   min-height: 385px;
 }
@@ -304,6 +305,7 @@ body {
 }
 
 .caption {
+  position: relative;
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
@@ -311,7 +313,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 62px;
 }
 
 .caption-white {
@@ -322,16 +324,18 @@ body {
   color: #000000;
 }
 
-.text-delimiter {
-  display: block;
+.caption::after {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  left: 85px;
   width: 60px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
-  align-self: center;
   margin-bottom: 30px;
 }
 
-.subitem-text-delimiter {
+.caption-black::after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -482,7 +486,7 @@ body {
   flex-direction: column;
   background-image: url("../images/subscription-form-background.jpg");
   background-size: cover;
-  background-color: #82b3d3;
+  background-color: #68a2ca;
   background-repeat: no-repeat;
 }
 
@@ -1092,7 +1096,7 @@ body {
   background-size: cover;
   padding: 35px 70px 72px 70px;
   margin-bottom: 50px;
-  background-color: #82b3d3;
+  background-color: #68a2ca;
 }
 
 .filter-title {
